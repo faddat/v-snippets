@@ -1,0 +1,20 @@
+<h1> Yo this should open a popup that'll make nft happen.  Or not.</h1>
+
+
+
+<script>
+function sendNFTToken() {
+  window.vsys.request({
+      method: 'sendNFT',
+      params:
+        {
+          tokenId: 'TWuaJ1cP4Pg9uDk5THGDbFoDayfe5a8hjdjaHf3CJ',
+          publicKey: '9LpEHCKMCCVnPni248p2qXKYzD8asJL78xhAKVfRBsow',
+          recipient: 'TWuaJ1cP4Pg9uDk5THGDbFoDayfe5a8hjdjaHf3CJ',
+          description: '<description>'
+        }
+    })
+    .then((response) => console.log(response))
+    .catch((error) => console.error);
+}
+</script>
